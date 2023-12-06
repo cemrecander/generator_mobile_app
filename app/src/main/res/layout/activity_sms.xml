@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmsActivity"
+    android:background="@color/background">
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/neumorphTextView3"
+        style="@style/Widget.Neumorph.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/neumorphTextView10"
+        style="@style/Widget.Neumorph.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tel"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView3"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/neumorphTextView11"
+        style="@style/Widget.Neumorph.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mesaj"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView10"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView9"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="220dp"
+        android:layout_height="73dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toEndOf="@+id/neumorphTextView10"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView3"
+        app:layout_constraintVertical_bias="0.052">
+
+        <EditText
+            android:id="@+id/et_tel"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:hint="Telefon numarası..."
+            android:singleLine="true" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView10"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="217dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toEndOf="@+id/neumorphTextView11"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView9"
+        app:layout_constraintVertical_bias="0.038">
+
+        <EditText
+            android:id="@+id/et_sms"
+            android:layout_width="186dp"
+            android:layout_height="163dp"
+            android:layout_gravity="center"
+            android:gravity="center|top|left"
+            android:hint="Mesajınızı giriniz..."
+            android:singleLine="false" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_send"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:text="Gönder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView10"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

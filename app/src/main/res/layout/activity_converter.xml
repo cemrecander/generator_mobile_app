@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConverterActivity"
+    android:background="@color/background">
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/neumorphTextView6"
+        style="@style/Widget.Neumorph.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertor"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="377dp"
+        android:layout_height="197dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView6"
+        app:layout_constraintVertical_bias="0.048">
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/neumorphTextView7"
+            style="@style/Widget.Neumorph.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decimal"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.111" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView2"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="254dp"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/neumorphTextView7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.027">
+
+            <EditText
+                android:id="@+id/et_dec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center"
+                android:hint="Decimal değeri giriniz."
+                android:inputType="number|numberDecimal"
+                android:singleLine="true" />
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView6"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="353dp"
+            android:layout_height="77dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView2"
+            app:layout_constraintVertical_bias="0.0">
+
+            <Spinner
+                android:id="@+id/spinner_dec"
+                android:layout_width="302dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/tv_dec_res"
+            style="@style/Widget.Neumorph.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Sonuç"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView6" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="386dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.058">
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView4"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toEndOf="@+id/neumorphTextView4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.042">
+
+            <EditText
+                android:id="@+id/et_mb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center"
+                android:hint="MegaByte değeri giriniz."
+                android:inputType="number|numberDecimal"
+                android:singleLine="true" />
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView3"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="355dp"
+            android:layout_height="79dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.714"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView4"
+            app:layout_constraintVertical_bias="0.0">
+
+            <Spinner
+                android:id="@+id/spinner_mb"
+                android:layout_width="302dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/tv_mb_res"
+            style="@style/Widget.Neumorph.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sonuç"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/neumorphTextView4"
+            style="@style/Widget.Neumorph.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MegaByte"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.112" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="389dp"
+        android:layout_height="204dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.786">
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/neumorphTextView5"
+            style="@style/Widget.Neumorph.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celsius"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.029"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.159" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView5"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="233dp"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.816"
+            app:layout_constraintStart_toEndOf="@+id/neumorphTextView5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.085">
+
+            <EditText
+                android:id="@+id/et_cels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center"
+                android:hint="Celsius değeri giriniz."
+                android:inputType="number|numberDecimal"
+                android:singleLine="true" />
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="376dp"
+            android:layout_height="67dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.708"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView5"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/radioFahrenheit"
+                android:layout_width="178dp"
+                android:layout_height="match_parent"
+                android:text="Fahrenheit"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioKelvin"
+                android:layout_width="192dp"
+                android:layout_height="63dp"
+                android:text="Kelvin"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/tv_cels_res"
+            style="@style/Widget.Neumorph.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sonuç"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.028"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
